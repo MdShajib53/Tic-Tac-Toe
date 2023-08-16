@@ -39,32 +39,32 @@ void funcTwo(){
         cout<<name2<<" please enter : ";
         cin>>digit;
     }
-    
+
     if(digit==1){
         row=0,col=0;
     }
-    if(digit==2){
+    else if(digit==2){
         row=0,col=1;
     }
-    if(digit==3){
+    else if(digit==3){
         row=0,col=2;
     }
-    if(digit==4){
+    else if(digit==4){
         row=1,col=0;
     }
-    if(digit==5){
+    else if(digit==5){
         row=1,col=1;
     }
-    if(digit==6){
+    else if(digit==6){
         row=1,col=2;
     }
-    if(digit==7){
+    else if(digit==7){
         row=2,col=0;
     }
-    if(digit==8){
+    else if(digit==8){
         row=2,col=1;
     }
-    if(digit==9){
+    else if(digit==9){
         row=2,col=2;
     }
     else{
