@@ -23,11 +23,11 @@ void funcOne(){
 void funcTwo(){
     int digit;
     if(token=='x'){
-        cout<<name1<<" please enter : \n";
+        cout<<"\n"<<name1<<" please enter : ";
         cin>>digit;
     }
     if(token=='0'){
-        cout<<name2<<" please enter : \n";
+        cout<<"\n"<<name2<<" please enter : ";
         cin>>digit;
     }
 
