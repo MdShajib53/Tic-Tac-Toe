@@ -21,7 +21,7 @@ int main(){
     cout<<"  _____|_____|____ \n";
     cout<<"       |     |     \n";
     cout<<"       |     |     \n";
-
+    
 
     return 0;
 }
