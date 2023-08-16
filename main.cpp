@@ -5,6 +5,7 @@ int space[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
 string name1, name2;
 int row,col;
 char token='x';
+bool tie;
 
 void funcOne(){
     cout<<"\nEnter The name of the first Player : ";
@@ -82,4 +83,43 @@ void funcTwo(){
         cout<<"There is no empty space!"<<endl;
         funcTwo();
     }
+}
+
+bool funcThree(){
+    for(int i=0;i<3;i++){
+        if( (space[i][0]==space[i][1] && space[i][0]== space[i][2]) || (space[0][i]==space[1][i] && space[0][i]==space[2][i]) ){
+            return true;
+        }
+    }
+
+    if( (space[0][0]==space[1][1] && space[1][1]==space[2][2]) || (space[0][2]==space[1][1] && space[1][1]==space[2][0]) ){
+        return true;
+    }
+
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            if(space[i][j]!='x' && space[i][j]!='0') return false;
+        }
+    }
+    tie = true;
+    return false;
+}
+
+int main(){
+    while(!funcThree()){
+        funcOne();
+        funcTwo();
+        funcThree();
+    }
+    if(token=='x' && tie==false){
+        cout<<name1<<" Wins!!"<<endl;
+    }
+    else if(token=='0' && tie==false){
+        cout<<"name2"<<" Wins!!"<<endl;
+    }
+    else{
+        cout<<"It's a draw!"<<endl;
+    }
+
+    return 0;
 }
