@@ -5,7 +5,7 @@ char space[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 string name1, name2;
 int row,col;
 char token='x';
-bool tie;
+bool tie=false;
 
 void funcOne(){
     //Structure
@@ -23,11 +23,11 @@ void funcOne(){
 void funcTwo(){
     int digit;
     if(token=='x'){
-        cout<<name1<<" please enter : ";
+        cout<<name1<<" please enter : \n";
         cin>>digit;
     }
     if(token=='0'){
-        cout<<name2<<" please enter : ";
+        cout<<name2<<" please enter : \n";
         cin>>digit;
     }
 
@@ -73,13 +73,23 @@ void funcTwo(){
     }
     else{
         cout<<"There is no empty space!"<<endl;
-        funcTwo();
+        
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                if(space[i][j]!='x' && space[i][j]!='0'){
+                    funcOne();
+                    funcTwo();
+                }
+            }
+        }
+        tie=true;
+        return;
     }
 }
 
 bool funcThree(){
     for(int i=0;i<3;i++){
-        if( (space[i][0]==space[i][1] && space[i][0]== space[i][2]) || (space[0][i]==space[1][i] && space[0][i]==space[2][i]) ){
+        if( (space[i][0]==space[i][1] && space[i][1]== space[i][2]) || (space[0][i]==space[1][i] && space[1][i]==space[2][i]) ){
             return true;
         }
     }
@@ -94,7 +104,7 @@ bool funcThree(){
         }
     }
     tie = true;
-    return false;
+    return true;
 }
 
 int main(){
@@ -113,12 +123,15 @@ int main(){
         funcThree();
     }
     if(token=='x' && tie==false){
-        cout<<name1<<" Wins!!"<<endl;
-    }
-    else if(token=='0' && tie==false){
+        funcOne();
         cout<<name2<<" Wins!!"<<endl;
     }
+    else if(token=='0' && tie==false){
+        funcOne();
+        cout<<name1<<" Wins!!"<<endl;
+    }
     else{
+        funcOne();
         cout<<"It's a draw!"<<endl;
     }
 
