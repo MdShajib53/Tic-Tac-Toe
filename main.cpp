@@ -1,22 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int space[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+char space[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 string name1, name2;
 int row,col;
 char token='x';
 bool tie;
 
 void funcOne(){
-    cout<<"\nEnter The name of the first Player : ";
-    cin>>name1;
-    cout<<"Enter The name of the second Player : ";
-    cin>>name2;
-    
-    cout<<"\n";
-    cout<<name1<<" will play first\n";
-    cout<<name2<<" will play second\n\n";
-
     //Structure
     cout<<"       |     |      \n";
     cout<<"   "<<space[0][0]<<"   |  "<<space[0][1]<<"  |  "<<space[0][2]<<endl;
@@ -107,6 +98,15 @@ bool funcThree(){
 }
 
 int main(){
+    cout<<"\nEnter The name of the first Player : ";
+    cin>>name1;
+    cout<<"Enter The name of the second Player : ";
+    cin>>name2;
+    
+    cout<<"\n";
+    cout<<name1<<" will play first\n";
+    cout<<name2<<" will play second\n\n";
+
     while(!funcThree()){
         funcOne();
         funcTwo();
@@ -116,7 +116,7 @@ int main(){
         cout<<name1<<" Wins!!"<<endl;
     }
     else if(token=='0' && tie==false){
-        cout<<"name2"<<" Wins!!"<<endl;
+        cout<<name2<<" Wins!!"<<endl;
     }
     else{
         cout<<"It's a draw!"<<endl;
