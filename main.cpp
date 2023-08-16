@@ -2,11 +2,11 @@
 using namespace std;
 
 int space[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+string name1, name2;
 int row,col;
 char token='x';
 
 void funcOne(){
-    string name1, name2;
     cout<<"\nEnter The name of the first Player : ";
     getline(cin, name1);
     cout<<"Enter The name of the second Player : ";
@@ -28,7 +28,7 @@ void funcOne(){
     cout<<"       |     |      \n";
 }
 
-void funcTwo(string name1,string name2){
+void funcTwo(){
     int digit;
     if(token=='x'){
         cout<<name1<<" please enter ";
@@ -68,7 +68,7 @@ void funcTwo(string name1,string name2){
     else{
         cout<<"Invalid !!!"<<endl;
     }
-    //When 2nd player played
+    //When 1st player played
     if(token=='x' && space[row][col]!='x' && space[row][col]!='0'){
         space[row][col]='x';
         token='0';
@@ -77,5 +77,9 @@ void funcTwo(string name1,string name2){
     else if(token=='0' && space[row][col]!='x' && space[row][col]!='0'){
         space[row][col]='0';
         token='x';
+    }
+    else{
+        cout<<"There is no empty space!"<<endl;
+        funcTwo();
     }
 }
