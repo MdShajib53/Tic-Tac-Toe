@@ -39,7 +39,7 @@ void funcTwo(){
         cout<<name2<<" please enter ";
         cin>>digit;
     }
-    if(digit=1){
+    if(digit==1){
         row=0,col=0;
     }
     if(digit==2){
@@ -48,7 +48,7 @@ void funcTwo(){
     if(digit==3){
         row=0,col=2;
     }
-    if(digit=4){
+    if(digit==4){
         row=1,col=0;
     }
     if(digit==5){
@@ -57,7 +57,7 @@ void funcTwo(){
     if(digit==6){
         row=1,col=2;
     }
-    if(digit=7){
+    if(digit==7){
         row=2,col=0;
     }
     if(digit==8){
