@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int space[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-    
+int space[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+int row,col;
+
+void funcOne(){
     string name1, name2;
     cout<<"\nEnter The name of the first Player : ";
     getline(cin, name1);
@@ -24,7 +25,4 @@ int main(){
     cout<<"       |     |      \n";
     cout<<"   "<<space[2][0]<<"   |  "<<space[2][1]<<"  |  "<<space[2][2]<<endl;
     cout<<"       |     |      \n";
-
-
-    return 0;
 }
