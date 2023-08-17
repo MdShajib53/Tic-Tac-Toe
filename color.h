@@ -1,5 +1,4 @@
 // Color Code-->Link = Link-->//https://www.theurbanpenguin.com/4184-2/
-#include<iostream>
 void Black(){
     printf("\033[0;30m");
 }
