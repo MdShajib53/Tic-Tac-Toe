@@ -119,13 +119,18 @@ bool funcThree(){
 
 int main(){
     cout<<"\nEnter The name of the 1st Player : ";
+    Yellow();
     cin>>name1;
+    Purple();
     cout<<"Enter The name of the 2nd Player : ";
     cin>>name2;
+    Reset();
     
-    cout<<"\n";
-    cout<<"          "<<name1<<" will play first.\n";
+    cout<<endl;
+    Blue();
+    cout<<"          "<<name1<<" will play first.\n\n";
     cout<<"          "<<name2<<" will play second.\n\n";
+    Reset();
 
     while(!funcThree()){
         funcOne();
