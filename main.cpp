@@ -233,18 +233,22 @@ int main(){
     if(token=='x' && tie==false){
         funcOne();
         Purple();
-        cout<<name2<<" Wins!!"<<endl;
+        cout<<name2;
+        Green();
+        cout<<" Wins!!"<<endl;
         Reset();
     }
     else if(token=='0' && tie==false){
         funcOne();
         Yellow();
-        cout<<name1<<" Wins!!"<<endl;
+        cout<<name1;
+        Green();
+        cout<<" Wins!!"<<endl;
         Reset();
     }
     else{
         funcOne();
-        Cyan();
+        Blue();
         cout<<"It's a draw!"<<endl;
         Reset();
     }
