@@ -117,8 +117,8 @@ int main(){
     cin>>name2;
     
     cout<<"\n";
-    cout<<name1<<"           will play first.\n";
-    cout<<name2<<"           will play second.\n\n";
+    cout<<"          "<<name1<<" will play first.\n";
+    cout<<"          "<<name2<<" will play second.\n\n";
 
     while(!funcThree()){
         funcOne();
