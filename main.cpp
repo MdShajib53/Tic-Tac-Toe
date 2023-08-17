@@ -130,7 +130,7 @@ int main(){
     cout<<endl;
     Blue();
     cout<<"          "<<name1;
-    cout<<" will play first.\n\n";
+    cout<<" will play first...\n\n";
     Reset();
 
     while(!funcThree()){
