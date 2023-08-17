@@ -144,13 +144,13 @@ int main(){
     }
     if(token=='x' && tie==false){
         funcOne();
-        Yellow();
+        Purple();
         cout<<name2<<" Wins!!"<<endl;
         Reset();
     }
     else if(token=='0' && tie==false){
         funcOne();
-        Purple();
+        Yellow();
         cout<<name1<<" Wins!!"<<endl;
         Reset();
     }
