@@ -30,6 +30,7 @@ void funcTwo(){
     if(token=='0'){
         cout<<"\n"<<name2<<", please enter : ";
         cin>>digit;
+        cout<<endl;
     }
 
     if(digit==1){
