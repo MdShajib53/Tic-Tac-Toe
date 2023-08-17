@@ -24,14 +24,18 @@ void funcOne(){
 void funcTwo(){
     int digit;
     if(token=='x'){
+        Yellow();
         cout<<"\n"<<name1<<", please enter : ";
         cin>>digit;
         cout<<endl;
+        Reset();
     }
     if(token=='0'){
+        Purple();
         cout<<"\n"<<name2<<", please enter : ";
         cin>>digit;
         cout<<endl;
+        Reset();
     }
 
     if(digit==1){
