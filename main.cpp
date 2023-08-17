@@ -10,7 +10,7 @@ char token='x';
 bool tie=false;
 
 
-void funcOne(){
+void Display(){
     //Structure
     cout<<"                 |     |      \n";
     cout<<"             ";
@@ -116,7 +116,7 @@ void funcOne(){
 
 }
 
-void funcTwo(){
+void inputDigit(){
     int digit;
     if(token=='x'){
         Yellow();
@@ -185,7 +185,7 @@ void funcTwo(){
     }
 }
 
-bool funcThree(){
+bool validityCheck(){
     for(int i=0;i<3;i++){
         if( (space[i][0]==space[i][1] && space[i][1]== space[i][2]) || (space[0][i]==space[1][i] && space[1][i]==space[2][i]) ){
             return true;
@@ -221,13 +221,13 @@ int main(){
     cout<<" will play first...\n\n";
     Reset();
 
-    while(!funcThree()){
-        funcOne();
-        funcTwo();
-        funcThree();
+    while(!validityCheck()){
+        Display();
+        inputDigit();
+        validityCheck();
     }
     if(token=='x' && tie==false){
-        funcOne();
+        Display();
         Purple();
         cout<<name2;
         Green();
@@ -235,7 +235,7 @@ int main(){
         Reset();
     }
     else if(token=='0' && tie==false){
-        funcOne();
+        Display();
         Yellow();
         cout<<name1;
         Green();
@@ -243,7 +243,7 @@ int main(){
         Reset();
     }
     else{
-        funcOne();
+        Display();
         Blue();
         cout<<"It's a draw!"<<endl;
         Reset();
