@@ -9,15 +9,15 @@ bool tie=false;
 
 void funcOne(){
     //Structure
-    cout<<"       |     |      \n";
-    cout<<"   "<<space[0][0]<<"   |  "<<space[0][1]<<"  |  "<<space[0][2]<<endl;
-    cout<<"  _____|_____|_____ \n";
-    cout<<"       |     |      \n";
-    cout<<"   "<<space[1][0]<<"   |  "<<space[1][1]<<"  |  "<<space[1][2]<<endl;
-    cout<<"  _____|_____|_____ \n";
-    cout<<"       |     |      \n";
-    cout<<"   "<<space[2][0]<<"   |  "<<space[2][1]<<"  |  "<<space[2][2]<<endl;
-    cout<<"       |     |      \n";
+    cout<<"                 |     |      \n";
+    cout<<"             "<<space[0][0]<<"   |  "<<space[0][1]<<"  |  "<<space[0][2]<<endl;
+    cout<<"            _____|_____|_____ \n";
+    cout<<"                 |     |      \n";
+    cout<<"             "<<space[1][0]<<"   |  "<<space[1][1]<<"  |  "<<space[1][2]<<endl;
+    cout<<"            _____|_____|_____ \n";
+    cout<<"                 |     |      \n";
+    cout<<"             "<<space[2][0]<<"   |  "<<space[2][1]<<"  |  "<<space[2][2]<<endl;
+    cout<<"                 |     |      \n";
 }
 
 void funcTwo(){
@@ -25,6 +25,7 @@ void funcTwo(){
     if(token=='x'){
         cout<<"\n"<<name1<<", please enter : ";
         cin>>digit;
+        cout<<endl;
     }
     if(token=='0'){
         cout<<"\n"<<name2<<", please enter : ";
@@ -75,7 +76,7 @@ void funcTwo(){
         token='x';
     }
     else{
-        cout<<digit<<" is already used. So, there is no empty space!"<<endl;
+        cout<<digit<<" is already used. So, Enter another digit!"<<endl;
         
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
