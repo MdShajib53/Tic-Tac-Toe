@@ -11,126 +11,111 @@ bool tie=false;
 int a,b,c,d,e,f,g,h,i;
 int flag = 0;
 
-/*void funcOne(){
-    //Structure
-    cout<<"                 |     |      \n";
-    cout<<"             "<<space[0][0]<<"   |  "<<space[0][1]<<"  |  "<<space[0][2]<<endl;
-    cout<<"            _____|_____|_____ \n";
-    cout<<"                 |     |      \n";
-    cout<<"             "<<space[1][0]<<"   |  "<<space[1][1]<<"  |  "<<space[1][2]<<endl;
-    cout<<"            _____|_____|_____ \n";
-    cout<<"                 |     |      \n";
-    cout<<"             "<<space[2][0]<<"   |  "<<space[2][1]<<"  |  "<<space[2][2]<<endl;
-    cout<<"                 |     |      \n";
-}*/
 
 void funcOne(){
     //Structure
-    //Mile Gele
-    //if(!flag){
-        cout<<"                 |     |      \n";
-        cout<<"             ";
-        if(space[0][0]=='x'){
-            Yellow();
-            cout<<space[0][0];
-            Reset();
-        }else if(space[0][0]=='0'){
-            Purple();
-            cout<<space[0][0];
-            Reset();
-        }else cout<<space[0][0];
-        cout<<"   |  ";
-        if(space[0][1]=='x'){
-            Yellow();
-            cout<<space[0][1];
-            Reset();
-        }else if(space[0][1]=='0'){
-            Purple();
-            cout<<space[0][1];
-            Reset();
-        }else cout<<space[0][1];
-        cout<<"  |  ";
-        if(space[0][2]=='x'){
-            Yellow();
-            cout<<space[0][2];
-            Reset();
-        }else if(space[0][2]=='0'){
+    cout<<"                 |     |      \n";
+    cout<<"             ";
+    if(space[0][0]=='x'){
+        Yellow();
+        cout<<space[0][0];
+        Reset();
+    }else if(space[0][0]=='0'){
+        Purple();
+        cout<<space[0][0];
+        Reset();
+    }else cout<<space[0][0];
+    cout<<"   |  ";
+    if(space[0][1]=='x'){
+        Yellow();
+        cout<<space[0][1];
+        Reset();
+    }else if(space[0][1]=='0'){
+        Purple();
+        cout<<space[0][1];
+        Reset();
+    }else cout<<space[0][1];
+    cout<<"  |  ";
+    if(space[0][2]=='x'){
+        Yellow();
+        cout<<space[0][2];
+         Reset();
+    }else if(space[0][2]=='0'){
             Purple();
             cout<<space[0][2];
             Reset();
-        }else cout<<space[0][2];
-        cout<<endl;
-        cout<<"            _____|_____|_____ \n";
-        cout<<"                 |     |      \n";
+    }else cout<<space[0][2];
+    cout<<endl;
+    cout<<"            _____|_____|_____ \n";
+    cout<<"                 |     |      \n";
 
-        cout<<"             ";
-        if(space[1][0]=='x'){
-            Yellow();
-            cout<<space[1][0];
-            Reset();
-        }else if(space[1][0]=='0'){
-            Purple();
-            cout<<space[1][0];
-            Reset();
-        }else cout<<space[1][0];
-        cout<<"   |  ";
-        if(space[1][1]=='x'){
-            Yellow();
-            cout<<space[1][1];
-            Reset();
-        }else if(space[1][1]=='0'){
-            Purple();
-            cout<<space[1][1];
-            Reset();
-        }else cout<<space[1][1];
-        cout<<"  |  ";
-        if(space[1][2]=='x'){
-            Yellow();
-            cout<<space[1][2];
-            Reset();
-        }else if(space[1][2]=='0'){
-            Purple();
-            cout<<space[1][2];
-            Reset();
-        }else cout<<space[1][2];
-        cout<<endl;
-        cout<<"            _____|_____|_____ \n";
-        cout<<"                 |     |      \n";
+    cout<<"             ";
+    if(space[1][0]=='x'){
+        Yellow();
+        cout<<space[1][0];
+        Reset();
+    }else if(space[1][0]=='0'){
+        Purple();
+        cout<<space[1][0];
+        Reset();
+    }else cout<<space[1][0];
+    cout<<"   |  ";
+    if(space[1][1]=='x'){
+        Yellow();
+        cout<<space[1][1];
+        Reset();
+    }else if(space[1][1]=='0'){
+        Purple();
+        cout<<space[1][1];
+        Reset();
+    }else cout<<space[1][1];
+    cout<<"  |  ";
+    if(space[1][2]=='x'){
+        Yellow();
+        cout<<space[1][2];
+        Reset();
+    }else if(space[1][2]=='0'){
+        Purple();
+        cout<<space[1][2];
+        Reset();
+    }else cout<<space[1][2];
+    cout<<endl;
+    cout<<"            _____|_____|_____ \n";
+    cout<<"                 |     |      \n";
 
-        cout<<"             ";
-        if(space[2][0]=='x'){
-            Yellow();
-            cout<<space[2][0];
-            Reset();
-        }else if(space[2][0]=='0'){
-            Purple();
-            cout<<space[2][0];
-            Reset();
-        }else cout<<space[2][0];
-        cout<<"   |  ";
-        if(space[2][1]=='x'){
-            Yellow();
-            cout<<space[2][1];
-            Reset();
-        }else if(space[2][1]=='0'){
-            Purple();
-            cout<<space[2][1];
-            Reset();
-        }else cout<<space[2][1];
-        cout<<"  |  ";
-        if(space[2][2]=='x'){
-            Yellow();
-            cout<<space[2][2];
-            Reset();
-        }else if(space[2][2]=='0'){
-            Purple();
-            cout<<space[2][2];
-            Reset();
-        }else cout<<space[2][2];
-        cout<<endl;
-        cout<<"                 |     |      \n";
+    cout<<"             ";
+    if(space[2][0]=='x'){
+        Yellow();
+        cout<<space[2][0];
+        Reset();
+    }else if(space[2][0]=='0'){
+        Purple();
+        cout<<space[2][0];
+        Reset();
+    }else cout<<space[2][0];
+    cout<<"   |  ";
+    if(space[2][1]=='x'){
+        Yellow();
+        cout<<space[2][1];
+        Reset();
+    }else if(space[2][1]=='0'){
+        Purple();
+        cout<<space[2][1];
+        Reset();
+    }else cout<<space[2][1];
+    cout<<"  |  ";
+    if(space[2][2]=='x'){
+        Yellow();
+        cout<<space[2][2];
+        Reset();
+    }else if(space[2][2]=='0'){
+        Purple();
+        cout<<space[2][2];
+        Reset();
+    }else cout<<space[2][2];
+    cout<<endl;
+    cout<<"                 |     |      \n";
 
-    //}
 }
 
 void funcTwo(){
@@ -182,8 +167,7 @@ void funcTwo(){
         cout<<"Invalid !!!"<<endl;
         cout<<"Please enter 1 to 9 any digit."<<endl;
         Reset();
-        funcOne();
-        funcTwo();
+        return;
     }
     //When 1st player played
     if(token=='x' && space[row][col]!='x' && space[row][col]!='0'){
@@ -199,15 +183,6 @@ void funcTwo(){
         Red();
         cout<<digit<<" is already used. So, Enter another digit!"<<endl<<endl;
         Reset();
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                if(space[i][j]!='x' && space[i][j]!='0'){
-                    funcOne();
-                    funcTwo();
-                }
-            }
-        }
-        tie=true;
         return;
     }
 }
@@ -235,7 +210,6 @@ bool funcThree(){
 }
 
 int main(){
-    a = b = c = d = e = f = g = h = i = -1; //For Color print in Structure
     cout<<"\nEnter The name of the 1st Player : ";
     Yellow();
     getline(cin,name1);
@@ -254,6 +228,7 @@ int main(){
     while(!funcThree()){
         funcOne();
         funcTwo();
+        cout<<"\nFunc3"<<endl;
         funcThree();
     }
     if(token=='x' && tie==false){
