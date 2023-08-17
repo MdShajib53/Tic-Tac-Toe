@@ -58,7 +58,8 @@ void funcOne(){
             Purple();
             cout<<space[0][2];
             Reset();
-        }else cout<<space[0][2]<<endl;
+        }else cout<<space[0][2];
+        cout<<endl;
         cout<<"            _____|_____|_____ \n";
         cout<<"                 |     |      \n";
 
@@ -91,7 +92,8 @@ void funcOne(){
             Purple();
             cout<<space[1][2];
             Reset();
-        }cout<<space[1][2]<<endl;
+        }else cout<<space[1][2];
+        cout<<endl;
         cout<<"            _____|_____|_____ \n";
         cout<<"                 |     |      \n";
 
@@ -124,7 +126,8 @@ void funcOne(){
             Purple();
             cout<<space[2][2];
             Reset();
-        }cout<<space[2][2]<<endl;
+        }else cout<<space[2][2];
+        cout<<endl;
         cout<<"                 |     |      \n";
 
     //}
