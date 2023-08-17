@@ -228,7 +228,6 @@ int main(){
     while(!funcThree()){
         funcOne();
         funcTwo();
-        cout<<"\nFunc3"<<endl;
         funcThree();
     }
     if(token=='x' && tie==false){
