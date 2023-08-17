@@ -60,6 +60,9 @@ void funcTwo(){
     }
     else{
         cout<<"Invalid !!!"<<endl;
+        cout<<"Please enter 1 to 9 any digit."<<endl;
+        funcOne();
+        funcTwo();
     }
     //When 1st player played
     if(token=='x' && space[row][col]!='x' && space[row][col]!='0'){
