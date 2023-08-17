@@ -1,9 +1,6 @@
 // Color Code-->Link = Link-->//https://www.theurbanpenguin.com/4184-2/
-<<<<<<< HEAD
-=======
 //ANSI color Code
 #include<iostream>
->>>>>>> mini
 void Black(){
     printf("\033[0;30m");
 }
