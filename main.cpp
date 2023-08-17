@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 #include"color.h"
 using namespace std;
 
@@ -124,11 +125,11 @@ bool funcThree(){
 int main(){
     cout<<"\nEnter The name of the 1st Player : ";
     Yellow();
-    cin>>name1;
+    getline(cin,name1);
     Reset();
     cout<<"Enter The name of the 2nd Player : ";
     Purple();
-    cin>>name2;
+    getline(cin,name2);
     Reset();
     
     cout<<endl;
