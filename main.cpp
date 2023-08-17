@@ -8,8 +8,6 @@ string name1, name2;
 int row,col;
 char token='x';
 bool tie=false;
-int a,b,c,d,e,f,g,h,i;
-int flag = 0;
 
 
 void funcOne(){
@@ -190,13 +188,11 @@ void funcTwo(){
 bool funcThree(){
     for(int i=0;i<3;i++){
         if( (space[i][0]==space[i][1] && space[i][1]== space[i][2]) || (space[0][i]==space[1][i] && space[1][i]==space[2][i]) ){
-            flag=1;
             return true;
         }
     }
 
     if( (space[0][0]==space[1][1] && space[1][1]==space[2][2]) || (space[0][2]==space[1][1] && space[1][1]==space[2][0]) ){
-        flag=1;
         return true;
     }
 
