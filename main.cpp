@@ -121,15 +121,16 @@ int main(){
     cout<<"\nEnter The name of the 1st Player : ";
     Yellow();
     cin>>name1;
-    Purple();
+    Reset();
     cout<<"Enter The name of the 2nd Player : ";
+    Purple();
     cin>>name2;
     Reset();
     
     cout<<endl;
     Blue();
-    cout<<"          "<<name1<<" will play first.\n\n";
-    cout<<"          "<<name2<<" will play second.\n\n";
+    cout<<"          "<<name1;
+    cout<<" will play first.\n\n";
     Reset();
 
     while(!funcThree()){
