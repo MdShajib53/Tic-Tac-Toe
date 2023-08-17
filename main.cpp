@@ -27,38 +27,38 @@ int flag = 0;
 void funcOne(){
     //Structure
     //Mile Gele
-    if(!flag){
+    //if(!flag){
         cout<<"                 |     |      \n";
         cout<<"             ";
         if(space[0][0]=='x'){
             Yellow();
             cout<<space[0][0];
             Reset();
-        }else{
+        }else if(space[0][0]=='0'){
             Purple();
             cout<<space[0][0];
             Reset();
-        }
+        }else cout<<space[0][0];
         cout<<"   |  ";
         if(space[0][1]=='x'){
             Yellow();
             cout<<space[0][1];
             Reset();
-        }else{
+        }else if(space[0][1]=='0'){
             Purple();
             cout<<space[0][1];
             Reset();
-        }
+        }else cout<<space[0][1];
         cout<<"  |  ";
         if(space[0][2]=='x'){
             Yellow();
             cout<<space[0][2];
             Reset();
-        }else{
+        }else if(space[0][2]=='0'){
             Purple();
             cout<<space[0][2];
             Reset();
-        }cout<<endl;
+        }else cout<<space[0][2]<<endl;
         cout<<"            _____|_____|_____ \n";
         cout<<"                 |     |      \n";
 
@@ -67,31 +67,31 @@ void funcOne(){
             Yellow();
             cout<<space[1][0];
             Reset();
-        }else{
+        }else if(space[1][0]=='0'){
             Purple();
             cout<<space[1][0];
             Reset();
-        }
+        }else cout<<space[1][0];
         cout<<"   |  ";
         if(space[1][1]=='x'){
             Yellow();
             cout<<space[1][1];
             Reset();
-        }else{
+        }else if(space[1][1]=='0'){
             Purple();
             cout<<space[1][1];
             Reset();
-        }
+        }else cout<<space[1][1];
         cout<<"  |  ";
         if(space[1][2]=='x'){
             Yellow();
             cout<<space[1][2];
             Reset();
-        }else{
+        }else if(space[1][2]=='0'){
             Purple();
             cout<<space[1][2];
             Reset();
-        }cout<<endl;
+        }cout<<space[1][2]<<endl;
         cout<<"            _____|_____|_____ \n";
         cout<<"                 |     |      \n";
 
@@ -100,34 +100,34 @@ void funcOne(){
             Yellow();
             cout<<space[2][0];
             Reset();
-        }else{
+        }else if(space[2][0]=='0'){
             Purple();
             cout<<space[2][0];
             Reset();
-        }
+        }else cout<<space[2][0];
         cout<<"   |  ";
         if(space[2][1]=='x'){
             Yellow();
             cout<<space[2][1];
             Reset();
-        }else{
+        }else if(space[2][1]=='0'){
             Purple();
             cout<<space[2][1];
             Reset();
-        }
+        }else cout<<space[2][1];
         cout<<"  |  ";
         if(space[2][2]=='x'){
             Yellow();
             cout<<space[2][2];
             Reset();
-        }else{
+        }else if(space[2][2]=='0'){
             Purple();
             cout<<space[2][2];
             Reset();
-        }cout<<endl;
+        }cout<<space[2][2]<<endl;
         cout<<"                 |     |      \n";
 
-    }
+    //}
 }
 
 void funcTwo(){
