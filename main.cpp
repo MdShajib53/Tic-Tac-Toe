@@ -260,14 +260,14 @@ int main(){
         Display();
         Blue();
         cout<<"It's a draw!"<<endl<<endl;
+        Reset();
         cout<<"                *********************************************"<<endl;
         cout<<"                *                                           *"<<endl;
         Red();
         cout<<"                            Both are Played Well             "<<endl;
         Reset();
         cout<<"                *                                           *"<<endl;
-        cout<<"                *********************************************"<<endl;
-        Reset();
+        cout<<"                *********************************************"<<endl;    
     }
 
     return 0;
