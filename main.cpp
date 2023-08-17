@@ -100,6 +100,7 @@ void funcTwo(){
 bool funcThree(){
     for(int i=0;i<3;i++){
         if( (space[i][0]==space[i][1] && space[i][1]== space[i][2]) || (space[0][i]==space[1][i] && space[1][i]==space[2][i]) ){
+            
             return true;
         }
     }
@@ -129,7 +130,7 @@ int main(){
     
     cout<<endl;
     Blue();
-    cout<<"          "<<name1;
+    cout<<"  "<<name1;
     cout<<" will play first...\n\n";
     Reset();
 
@@ -140,15 +141,21 @@ int main(){
     }
     if(token=='x' && tie==false){
         funcOne();
+        Yellow();
         cout<<name2<<" Wins!!"<<endl;
+        Reset();
     }
     else if(token=='0' && tie==false){
         funcOne();
+        Purple();
         cout<<name1<<" Wins!!"<<endl;
+        Reset();
     }
     else{
         funcOne();
+        Cyan();
         cout<<"It's a draw!"<<endl;
+        Reset();
     }
 
     return 0;
