@@ -75,7 +75,7 @@ void funcTwo(){
         token='x';
     }
     else{
-        cout<<"There is no empty space!"<<endl;
+        cout<<space[row][col]<<" is already used. So, there is no empty space!"<<endl;
         
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
