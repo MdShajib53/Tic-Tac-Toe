@@ -231,21 +231,42 @@ int main(){
         Purple();
         cout<<name2;
         Green();
-        cout<<" Wins!!"<<endl;
+        cout<<" Wins!!"<<endl<<endl;
         Reset();
+        cout<<"                *********************************************"<<endl;
+        cout<<"                *                                           *"<<endl;
+        Green();
+        cout<<"                       Congratulations  "<<name2<<" !!       "<<endl;
+        Reset();
+        cout<<"                *                                           *"<<endl;
+        cout<<"                *********************************************"<<endl;
     }
     else if(token=='0' && tie==false){
         Display();
         Yellow();
         cout<<name1;
         Green();
-        cout<<" Wins!!"<<endl;
+        cout<<" Wins!!"<<endl<<endl;
         Reset();
+        cout<<"                *********************************************"<<endl;
+        cout<<"                *                                           *"<<endl;
+        Green();
+        cout<<"                       Congratulations  "<<name1<<" !!       "<<endl;
+        Reset();
+        cout<<"                *                                           *"<<endl;
+        cout<<"                *********************************************"<<endl;
     }
     else{
         Display();
         Blue();
-        cout<<"It's a draw!"<<endl;
+        cout<<"It's a draw!"<<endl<<endl;
+        cout<<"                *********************************************"<<endl;
+        cout<<"                *                                           *"<<endl;
+        Red();
+        cout<<"                            Both are Played Well             "<<endl;
+        Reset();
+        cout<<"                *                                           *"<<endl;
+        cout<<"                *********************************************"<<endl;
         Reset();
     }
 
