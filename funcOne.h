@@ -1,3 +1,4 @@
+#include<iostream>
 void funcOne(){
     //Structure
     cout<<"                 |     |      \n";
