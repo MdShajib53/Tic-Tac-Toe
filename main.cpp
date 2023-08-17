@@ -23,11 +23,11 @@ void funcOne(){
 void funcTwo(){
     int digit;
     if(token=='x'){
-        cout<<"\n"<<name1<<" please enter : ";
+        cout<<"\n"<<name1<<", please enter : ";
         cin>>digit;
     }
     if(token=='0'){
-        cout<<"\n"<<name2<<" please enter : ";
+        cout<<"\n"<<name2<<", please enter : ";
         cin>>digit;
     }
 
@@ -111,14 +111,14 @@ bool funcThree(){
 }
 
 int main(){
-    cout<<"\nEnter The name of the first Player : ";
+    cout<<"\nEnter The name of the 1st Player : ";
     cin>>name1;
-    cout<<"Enter The name of the second Player : ";
+    cout<<"Enter The name of the 2nd Player : ";
     cin>>name2;
     
     cout<<"\n";
-    cout<<name1<<" will play first\n";
-    cout<<name2<<" will play second\n\n";
+    cout<<name1<<"           will play first.\n";
+    cout<<name2<<"           will play second.\n\n";
 
     while(!funcThree()){
         funcOne();
