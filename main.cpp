@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include"color.h"
+#include<windows.h>
 using namespace std;
 
 char space[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
@@ -124,6 +125,7 @@ void inputDigit(){
         cin>>digit;
         cout<<endl;
         Reset();
+        system("cls");
     }
     if(token=='0'){
         Purple();
@@ -131,6 +133,7 @@ void inputDigit(){
         cin>>digit;
         cout<<endl;
         Reset();
+        system("cls");
     }
 
     if(digit==1){
@@ -233,13 +236,15 @@ int main(){
         Green();
         cout<<" Wins!!"<<endl<<endl;
         Reset();
+        Blue();
         cout<<"                *********************************************"<<endl;
         cout<<"                *                                           *"<<endl;
         Green();
         cout<<"                       Congratulations  "<<name2<<" !!       "<<endl;
-        Reset();
+        Blue();
         cout<<"                *                                           *"<<endl;
         cout<<"                *********************************************"<<endl;
+        Reset();
     }
     else if(token=='0' && tie==false){
         Display();
@@ -248,26 +253,29 @@ int main(){
         Green();
         cout<<" Wins!!"<<endl<<endl;
         Reset();
+        Blue();
         cout<<"                *********************************************"<<endl;
         cout<<"                *                                           *"<<endl;
         Green();
         cout<<"                       Congratulations  "<<name1<<" !!       "<<endl;
-        Reset();
+        Blue();
         cout<<"                *                                           *"<<endl;
         cout<<"                *********************************************"<<endl;
+        Reset();
     }
     else{
         Display();
         Blue();
         cout<<"It's a draw!"<<endl<<endl;
-        Reset();
+        Cyan();
         cout<<"                *********************************************"<<endl;
         cout<<"                *                                           *"<<endl;
         Red();
-        cout<<"                            Both are Played Well             "<<endl;
-        Reset();
+        cout<<"                            Both are Played Well!!           "<<endl;
+        Cyan();
         cout<<"                *                                           *"<<endl;
-        cout<<"                *********************************************"<<endl;    
+        cout<<"                *********************************************"<<endl;  
+        Reset();  
     }
 
     return 0;
