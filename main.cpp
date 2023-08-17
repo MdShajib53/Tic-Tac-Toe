@@ -66,8 +66,10 @@ void funcTwo(){
         row=2,col=2;
     }
     else{
+        Red();
         cout<<"Invalid !!!"<<endl;
         cout<<"Please enter 1 to 9 any digit."<<endl;
+        Reset();
         funcOne();
         funcTwo();
     }
@@ -82,8 +84,9 @@ void funcTwo(){
         token='x';
     }
     else{
-        cout<<digit<<" is already used. So, Enter another digit!"<<endl;
-        
+        Red();
+        cout<<digit<<" is already used. So, Enter another digit!"<<endl<<endl;
+        Reset();
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
                 if(space[i][j]!='x' && space[i][j]!='0'){
